@@ -2,12 +2,15 @@
 
 /**
  * main - Entry point
- * Return:  0 (Success)
+ * Return:  1 (Success)
  */
 int main(void)
 {
-	const char *error_message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(2, error_message, 59);
+	char *message1 = "and that piece of art is useful\" ";
+	char *message2 = "- Dora Korpar, 2015-10-19\n";
+
+	write(2, message1, 30);
+	write(2, message2, 29);
 	return (1);
 }
 
