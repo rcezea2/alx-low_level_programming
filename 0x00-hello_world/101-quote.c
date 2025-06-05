@@ -10,7 +10,7 @@ int main(void)
 	char *message2 = "- Dora Korpar, 2015-10-19\n";
 
 	write(2, message1, 30);
-	write(2, message2, 29);
+	write(2, message2, 27);
 	return (1);
 }
 
