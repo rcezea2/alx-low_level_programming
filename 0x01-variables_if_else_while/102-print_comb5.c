@@ -7,12 +7,15 @@
 
 int main(void)
 {
-	int i = 48, j = 48, k = 48, l = 49;
+	int i = 48, j, k, l;
 
 	while (i < 58)
 	{
+		j = 48;
 		while (j < 58)
 		{
+			k = i;
+			l = j + 1;
 			while (k < 58)
 			{
 				while (l < 58)
@@ -32,11 +35,8 @@ int main(void)
 				l = 48;
 			}
 			j++;
-			k = i;
-			l = (j == 9) ? 8 : (j + 1);
 		}
 		i++;
-		j = 48;
 	}
 	putchar(10);
 	return (0);
